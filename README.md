@@ -1,4 +1,0 @@
-sigbovik
-========
-
-SIGBOVIK submissions.
