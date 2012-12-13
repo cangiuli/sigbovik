@@ -1,0 +1,5 @@
+#!/bin/bash
+clang -emit-llvm -O0 -c $1 -o - | \
+opt -load ./ASCR$2.so -ascr$2 -std-compile-opts -o - > $1.ll
+clang -g $1.ll -o $1.ascr$2
+
