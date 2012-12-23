@@ -1,0 +1,20 @@
+Presentation {{{
+
+interactive fiction and interactive theorem proving
+why not both?
+
+}}}
+Implementation {{{
+
+dependencies:
+  Term::Screen::Uni
+
+library where you pick up tomes of knowledge (coq libraries)
+state your destination, then you are whisked away to:
+  you are in a maze of twisty lemmas, all alike
+
+context is your inventory
+if auto fails (?), then
+  likely to be eaten by a grue (general recursive, undecidable equivalence)
+
+}}}

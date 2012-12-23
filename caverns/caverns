@@ -1,0 +1,32 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use Term::Cap;
+$|++;
+
+# Subs {{{
+
+sub say { print shift . "\n"; }
+
+# }}}
+# Initialization {{{
+
+my $term = Term::Cap->Tgetent({OSPEED => 9600});
+my $termClear = $term->Tputs('cl');
+sub clear { print $termClear; }
+
+# TODO quit if size < 80x24
+
+clear;
+print <<'END';
+"WELCOME TO CAVERNS OF COQ!
+
+CoC is a game of adventure, danger, and low cunning. In it you will explore some
+of the most amazing theorems ever proven by mortal man. No computer scientist
+should be without one!"
+
+END
+
+# }}}
+
