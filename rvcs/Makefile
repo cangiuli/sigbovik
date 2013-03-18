@@ -1,8 +1,7 @@
 .PHONY: clean
 
-rvcs.pdf: rvcs.tex citations.bib
+rvcs.pdf: rvcs.tex
 	pdflatex $<
-	#pdflatex $< && bibtex $(subst .tex,,$<) && pdflatex $< && pdflatex $< 
 
 clean:
-	-rm -f *.aux *.log *.bbl *.blg *.out
+	-rm -f *.aux *.log *.out
