@@ -1,8 +1,13 @@
 \documentclass[10pt]{article}
 \usepackage[colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]%
 {hyperref}
+\usepackage{proof}
+\usepackage{amsmath}
+\usepackage{cite}
 \usepackage{graphicx}
 \usepackage{tikz}
+\usepackage{stmaryrd}
+\usepackage[normalem]{ulem}
 \usetikzlibrary{decorations.markings}
 \tikzset{>=latex}
 
@@ -10,23 +15,93 @@
 \renewcommand\j{\includegraphics[height=.6\baselineskip]{j.pdf}\ }
 \newcommand\J[1]{\tableflip\rotatebox[origin=c]{180}{#1}}
 
-\title{The $\infty$-accidentopos model of\\ unintentional type theory \\
+\newcommand{\msout}[1]{\text{\sout{\ensuremath{#1}}}}
+\newcommand\G{\ensuremath{\Gamma}}
+\newcommand\type{\ensuremath{\; \mathsf{type}}}
+\newcommand\Gpd{\ensuremath{\mathbf{Gpd}}}
+\newcommand\Id[3]{\ensuremath{#2 =_{#1} #3}}
+\newcommand\interp[1]{\ensuremath{\llbracket #1\rrbracket}}
+
+\newcommand\AccRel{\ensuremath{\overset{?\_?}{\approx}}}
+\newcommand\Acc[4]{\ensuremath{#3{:}#1 \AccRel #4{:}#2}}
+%TODO a better symbol
+
+\title{The ($\infty$,1)-accidentopos model of\\ unintentional type theory \\
 \textsc{\large{(Extended Abstract)}}}
 \author{Carlo Angiuli}
 
 \begin{document}
 \maketitle
 
+%Weak $\infty$-Groupoid Martin-L\" of type theory
+
 \section{Introduction}
 
-Unintentional type theory is a variant of Martin-L\" of type theory which serves
-as an internal language of $\infty$-accidentoposes.
+PER Martin-L\"of's intensional type theory (ITT) associates to any elements
+$x,y$ of a type $A$ an identity type $\Id Axy$, the type of proofs of equality
+of these elements. In \cite{HofmannStreicher}, Hofmann and Streicher showed that
+Groupoid Martin-L\"of's ITT can be modeled in the category $\Gpd$, such that any
+closed type $A$ is interpreted as a groupoid $\interp{A}$, terms $x,y:A$ are
+objects $\interp{x},\interp{y}\in\interp{A}$, and $\interp{\Id Axy}$ is the
+discrete groupoid $\hom_{\interp A}(\interp x,\interp y)$.
 
-%Weak $\infty$-Groupoid Martin-L\" of type theory
+In general, the identity type itself can have non-trivial morphisms, resulting
+in a potentially infinite tower of identity types. This observation has given
+rise to semantics in simplicial sets \cite{KapulkinLumsdaineVoevodsky}, or
+globular strict \cite{Warren} or weak $\infty$-groupoids.
+
+the Homotopy Type Theory project \cite{HoTT}, 
+
+
+(More generally, it is
+expected that ITT is an internal language for $(\infty,1)$-toposes.)
+
+That such interpretations are possible affords us the
+ability to use ITT as a ``natively homotopical'' language for reasoning about
+spaces, an idea explored in great detail by \cite{HoTTBook}.
+
+This work focuses on the lesser-known \emph{unintentional type theory} (UTT), a
+relative of ITT which has a \emph{mistaken identity} type $\Acc ABxy$, the type
+of inadvertent conflations of the terms $x:A$ and $y:B$. This increases the
+theory's expressive power by internalizing a type of user error previously
+expressible only in meta-metatheory (e.g., blackboards, notes, typesetting, and
+so forth).
+
+In particular, we show that UTT is an internal language of
+($\infty$,1)-accidentoposes.
+
+%cite Falso
+
 \section{Syntax}
+
+Most of the rules of unintentional type theory are identical to those of
+ordinary type theory, as in \cite{Hofmann}. 
+
+\[
+\infer[\AccRel F]
+  {\G\vdash(\Acc ABMN)\type}
+  {\G\vdash M:A & \G\vdash N:B}
+\]
+
+
+\cite{Simmons}
+
+In this way, mistaken 
+
+It is clear that mistaken identities can quickly propagate through
+
+$\msout{asd}$
+
+proof relevant version of \cite{Falso}
+
+
+
+
 
 The \j rule 
 \J{argument}
+
+\section{Semantics}
 
 \begin{tikzpicture}
 % stairs
@@ -63,9 +138,9 @@ The \j rule
 \section*{Acknowledgements}
 
 Thanks to Chris Martens for suggesting that I study UTT, and the Univalent
-Foundations project for making it seem like a wise idea.
+Foundations program for making it seem like a wise idea.
 
-%\bibliography{citations}{}
-%\bibliographystyle{acm}
+\bibliography{citations}{}
+\bibliographystyle{acm}
 
 \end{document}
