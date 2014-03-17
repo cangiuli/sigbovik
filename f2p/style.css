@@ -29,6 +29,14 @@ h2 {
 a {
   color: #007aff;
 }
+#button {
+  margin-left: 300px;
+  padding: 3px;
+  border-radius: 3px;
+  color: #1786ff;
+  font-weight: bold;
+  border: 1px solid #1786ff;
+}
 
 /* #007aff */
 
