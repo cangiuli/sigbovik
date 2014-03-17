@@ -1,0 +1,35 @@
+body {
+  background-color: #f8f8f8;
+  margin: 0;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, Verdana, sans-serif;
+  font-size: 16px;
+  width: 500px;
+}
+hr {
+  height: 1px;
+  display: block;
+  background: transparent;
+  width: 100%;
+  border: 0;
+  border-top: solid 1px #b4b4b4;
+}
+h2 {
+  margin-top: 5px;
+  font-weight: normal;
+  font-size: 20px;
+}
+#header {
+  background-color: #fff;
+  border: 0;
+  border-bottom: solid 1px #b4b4b4;
+}
+#header h1 {
+  margin-top: 0;
+}
+a {
+  color: #007aff;
+}
+
+/* #007aff */
+
+
