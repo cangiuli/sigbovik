@@ -45,56 +45,66 @@ food}, has taken off in popularity in the past few years \cite{NYT09,Cope14}.
 
 \section{Algorithms with the human touch}
 
-Now that computers 
+So too should computer scientists return to the roots of computation---slow,
+error-prone calculations performed by humans. After all, despite the close
+relationship between computer programs and type theory \cite{MartinLof85}, or
+indeed, between computer programs and algorithms, there is no need to involve
+computers in deeply human tasks like sorting lists, routing packets, or decoding
+MPEG-4 video streams.
 
-Algorithms have lost the personal touch. They can be evaluated
+We advocate a more personal approach to computation, called \emph{artisanal type
+theory}. Artisanal type theory has the same rules as ordinary type theory,
+except that all terms and typing derivations must be handwritten. Closed,
+well-typed terms evaluate to values of the same type, accompanied by a
+certificate of authenticity that a human performed that evaluation.
 
-But intuitionistic logic, while about algorithms, need not be about computers.
-We should return to the roots of computation---slow, error-prone, human 
-
-
-Of course, since type theories simply describe constructive proofs, not computer
-programs per se \cite{MartinLof85}
-
-must write the derivation by hand
-
-we maintain the invariant that closed terms evaluate to a normal form
-accompanied by a certificate of authenticity that a human performed that
-evaluation.
-
-this fact demonstrates, among other things, a firm commitment to \emph{locally-}
-grown, sound, and complete 
-
-Since each term was lovingly handcrafted and normalized by a human, these
-semantics provide a more \emph{meaningful} explanation of type theory than
-traditional computer-based interpreters.
-
-
-
-
-
+Since each term was lovingly handcrafted and normalized, these
+artisanally-performed beta-reductions provide a more \emph{meaningful}
+explanation of type theory than traditional computer-based interpreters.
+Using artisanal type theory demonstrates a firm commitment to
+\emph{locally-}grown, sound, and complete reasoning systems.
 
 \section{Examples}
 
-\subsection{Tiny data}
+\paragraph{Shallow learning.}
+We can implement artificial intelligence using human intelligence. Given the
+training data that \texttt{false} is desired but \texttt{true} is not, one can
+manually build a classifier for booleans. Such a classifier can then be run on a
+boolean to determine whether or not it is in the desired set. In the example
+below, we run the classifier on \texttt{false}.
 
-shallow learning
+\vspace{1em}\noindent
+\includegraphics[width=\textwidth]{isfalse.png}
 
-build a classifier for booleans
+\paragraph{Fairly quick sorting.}
+Artisanal computation has some advantages over computer programming---namely,
+humans can perform some computations without needing a precise algorithm.
+In this example, we sort a list of integers without the need to specify a
+particular sorting algorithm.
 
-\subsection{Small-batch jobs}
+\vspace{1em}\noindent
+\includegraphics[width=\textwidth]{sort.png}
 
-\vspace{10em}
+\paragraph{Small-batch jobs.}
+We can also write scripts which artisanally perform repetitive computing tasks
+such as renaming a large number of files, accessing sequential URLs, etc. Doing
+so requires adding primitives for I/O, file system access, and so forth. As
+discussed above, it is unnecessary to actually implement these primitives,
+because the human runtime already supports these tasks via a computer's
+traditional user interface.
+%
+Furthermore, unlike in traditional scripting languages, it is easy to extend
+this with physical-world primitives such as \texttt{eatLunch},
+\texttt{writeHandwrittenThankYouNote}, and \texttt{sleep}.
 
-as a foundation of \emph{human} science
+\section{Conclusion}
 
-logic as if people (but not computers) matter
-technology is ruining human interaction
-computers are ruining mathematical interaction??
-
-respect for employees
-
-heirloom
+We hope artisanal type theory will appeal to computer scientists and
+mathematicians who appreciate algorithms but believe computers themselves are
+quite inconvenient at times. Unlike ordinary type theory, it directly expresses
+computations as if people, but not computers, matter. Therefore, we are hopeful
+that artisanal type theory will be a useful foundation for the field of
+\emph{human science}.
 
 \bibliography{artisanal}{}
 \bibliographystyle{acm}
