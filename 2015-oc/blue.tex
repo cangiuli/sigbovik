@@ -1,0 +1,44 @@
+\documentclass{beamer}
+
+\usepackage{helvet}
+\setbeamertemplate{navigation symbols}{}
+\setbeamercolor{structure}{fg=black}
+
+\title{Concurrent Tracks Considered Harmful}
+\author{Carlo Angiuli}
+\date{April 1, 2015}
+\institute{SIGBOVIK Organizing Committee}
+
+\begin{document}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+{
+\setbeamercolor{structure}{fg=blue}
+\begin{frame}
+\frametitle{Concurrent Talking is Hard}
+\color{blue}
+Humans are engineered to listen to only a single speaker.
+\vspace{1em}
+\begin{itemize}
+\color{blue}
+\item Mouth-targeted thought compilation optimizes for single-threaded
+execution.
+\item Remarks can be processed out of order.
+\item Ears do not support synchronization primitives.
+\end{itemize}
+\end{frame}
+}
+
+\begin{frame}
+\frametitle{Logistical Challenges}
+\begin{itemize}
+\item Avoid scheduling two high-interest talks simultaneously.
+\item Requires multiple rooms, or projectors, or shirt colors.
+\item Unfairly benefits loud speakers.
+\end{itemize}
+\end{frame}
+
+\end{document}
