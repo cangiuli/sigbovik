@@ -4,21 +4,16 @@
 \setbeamertemplate{navigation symbols}{}
 \setbeamercolor{structure}{fg=black}
 
-\title{Concurrent Tracks Considered Harmful}
-\author{Carlo Angiuli}
-\date{April 1, 2015}
-\institute{SIGBOVIK Organizing Committee}
-
 \begin{document}
 
 \begin{frame}
-\maketitle
-\end{frame}
-
+\frametitle{
+\color{blue} Concurrent Talking is Hard
+\color{red} \hspace{-12.4em} Tracks Save Time
+}
+\vspace{-1em}
 {
 \setbeamercolor{structure}{fg=blue}
-\begin{frame}
-\frametitle{Concurrent Talking is Hard}
 \color{blue}
 Humans are engineered to listen to only a single speaker.
 \vspace{1em}
@@ -29,18 +24,18 @@ execution.
 \item Remarks can be processed out of order.
 \item Ears do not support synchronization primitives.
 \end{itemize}
-\end{frame}
 }
-
-\begin{frame}
-\frametitle{Logistical Challenges}
+{
+\vspace{-7em}
+\setbeamercolor{structure}{fg=red}
 \begin{itemize}
-\item Avoid scheduling two high-interest talks simultaneously.
-\pause
-\item Requires multiple rooms, or projectors, or shirt colors.
-\pause
-\item Unfairly \pause benefits \pause loud \pause speakers.
+\color{red}
+\item Brent's Theorem: $\frac{T_1}{p} \leq T_p < \frac{T_1}{p} + T_\infty$
+\item Specific case for two tracks:
+$\frac{T}{2} \leq T_2 < \frac{T}{2} + 1$
+where $T$ is the number of talks
 \end{itemize}
+}
 \end{frame}
 
 \end{document}

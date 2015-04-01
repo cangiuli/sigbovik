@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage[paperwidth=5.04in, paperheight=3.78in]{geometry}
+
+\usepackage{pdfpages}
+
+\begin{document}
+\includepdfmerge[nup=2x1,frame=true,templatesize={2.52in}{3.78in}]
+                {red.pdf, 1,
+                 blue.pdf, 1}
+\includepdf{slide.pdf}
+\includepdfmerge{red.pdf, 3,
+                 blue.pdf, 3,
+                 red.pdf, 4,
+                 blue.pdf, 4,
+                 red.pdf, 5,
+                 blue.pdf, 5,
+                 red.pdf, 6,
+                 blue.pdf, 6,
+                 red.pdf, 7,
+                 blue.pdf, 7,
+                 red.pdf, 8,
+                 blue.pdf, 8}
+\end{document}
