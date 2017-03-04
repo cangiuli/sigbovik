@@ -2,7 +2,6 @@ programming paradigms
 explaining burritos from a monadic point of view
 HyperText ML 5
 cat-amorphisms
-"type systems" as in keyboard layouts
 human computation for stuff computers are better at
 something about weird twitter
 paper annotations (like youtube, arxiv):
@@ -13,7 +12,6 @@ Long Tails of the Arabian Nights Distribution
 Into the Wild: constructing "real-life"
   counterexamples to things that work well in practice
 Prince Mank Hexzy requesting homeward bound money
-type safety / OSHA
 overlay journal for "comprehensible nlab articles", etc
 and/or logical connective - inl, inr, inboth
 float analysis (cf real analysis)
@@ -22,3 +20,8 @@ analysis of "what idiot called them" tweets
 TFAE with only one clause
 generalissimo unifier
 dead code resurrection
+
+the next N jokes about type theory
+  "type systems" as in keyboard layouts
+  type safety / OSHA
+  book name jokes for TAPL/PFPL/etc
