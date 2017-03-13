@@ -2,10 +2,12 @@
 \usepackage[colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]%
 {hyperref}
 \usepackage{cleveref}
-\usepackage{cite}
+\usepackage[natbib,citestyle=authoryear]{biblatex}
 \usepackage{calc}
 \usepackage{ifthen}
 \usepackage{tikz}
+
+\addbibresource{next.bib}
 
 %adapted from http://www.texample.net/tikz/examples/pie-chart/
 \newcommand{\slice}[3]{
@@ -32,7 +34,7 @@ noun \emph{type} in the Oxford English Dictionary. This myopic view of types has
 impeded the vast majority of the possible subdisciplines of type theory, as
 depicted in \Cref{fig:pie-chart}.
 
-\begin{figure}[b]
+\begin{figure}[hb]
 \centering
 \begin{tikzpicture}[scale=2]
 \slice{0}{5/100*360}{black!25}
@@ -45,7 +47,32 @@ the context of type systems.}
 
 In the remainder of this paper, we describe a family of unimplemented type
 systems that is intended to span differences of meaning by a group of disparate
-frameworks \cite{landin66}.
+frameworks \citep{landin66}.
+
+\paragraph{A pattern stamped onto the face of a coin.}
+
+In this sense, type systems are methods of stamping patterns on coins. The
+earliest type systems required manually hammering a piece of metal between two
+dies. Improvements in metalworking and industrial technologies has enabled
+extensive automation in modern type systems. A recent theoretical advance in
+type systems occurred during the 2013 United States debt-ceiling crisis, in
+which some economists suggested that the United States Treasury could mint a \$1
+trillion platinum coin in order to keep the government afloat without raising
+the debt ceiling \citep{matthews13}.
+
+\paragraph{An imperial edict released by Emperor Constans II in AD 648
+prohibiting discussion of monothelitism.}
+
+The Type of Constans was a ban on the debate between monothelitism and
+dyothelitism---whether Jesus Christ, having both divine and human nature,
+possessed a single will, or two wills (divine and human).
+
+In fact, traditional type systems are already ideal for restricting inquiry into
+the nature of things; recall, for instance, the fable of Professors Descartes
+and Bessel in \citet{reynolds83}. To a programming language researcher, it is
+clear that the Type of Constans is parametrically polymorphic in the will of
+Christ, and the prohibition of discussion is simply a free theorem
+\citep{wadler89}.
 
 \paragraph{The sort of person to whom one is attracted (\emph{one's type}).}
 
@@ -54,11 +81,6 @@ frameworks \cite{landin66}.
 angels dancing on the head of a pin, cite Aquinas
 
 \paragraph{Symbol, emblem}
-
-\paragraph{A pattern stamped onto the face of a coin}
-
-\paragraph{An imperial edict released by Emperor Constans II in AD 648
-prohibiting arguments over the Christological doctrine of Monotheletism.}
 
 \paragraph{An exemplar of a particular kind or order}
 
@@ -70,9 +92,11 @@ prohibiting arguments over the Christological doctrine of Monotheletism.}
 
 \paragraph{An abstract category, rather than its instantiations (type/token distinction)}
 
-\paragraph{To write with a keyboard}
+\paragraph{\emph{type, v.} To write with a keyboard.}
 
-\bibliography{next}{}
-\bibliographystyle{acm}
+There is
+\citep{noyes83}
+
+\printbibliography
 
 \end{document}
